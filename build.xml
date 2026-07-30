@@ -48,10 +48,10 @@
 
     <property name="jlayer.jar" value="${libdir}/jlayer-1.0.1.jar" />
     <property name="basicplayer.jar" value="${libdir}/basicplayer-3.0.jar" />
-    <property name="tritonus-share.jar" value="${libdir}/tritonus-share-0.3.6.jar" />
+    <property name="tritonus-share.jar" value="${libdir}/tritonus-share-0.3.7-2.jar" />
 	<property name="tritonus-jorbis.jar" value="${libdir}/tritonus-jorbis-0.3.6.jar" />
     <property name="voirbisspi.jar" value="${libdir}/vorbisspi-1.0.3.jar" />
-    <property name="mp3spi.jar" value="${libdir}/mp3spi-1.9.4.jar" />
+    <property name="mp3spi.jar" value="${libdir}/mp3spi-1.9.5.4.jar" />
 	<property name="jspeex.jar" value="${libdir}/jspeex-0.9.7.jar" />
 	<property name="jorbis.jar" value="${libdir}/jorbis-0.0.17.jar" />
 
@@ -89,7 +89,7 @@
         <mkdir dir="${build_classdir}" />
 		<unjar src="${src_dist.jar}" dest="${src_dir}">
 		</unjar>
-		<javac srcdir="${src_dir}" encoding="UTF-8" source="1.5" target="1.5"
+		<javac srcdir="${src_dir}" encoding="UTF-8" source="1.8" target="1.8"
 			destdir="${build_classdir}" includes="${packagedir}/**" debug="true"
 			verbose="${verbose}">
 			<classpath refid="buildlibs" />
